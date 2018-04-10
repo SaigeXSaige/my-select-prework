@@ -4,10 +4,10 @@ def my_select(collection)
   
   if collection.length > 0 
     while i < collection.length 
-      if yield(collection[i])
-        new_collection << collection[i]
+      yield(collection[i])
+      new_collection << collection[i]
       i += 1 
-      end
+      
     end
   else
     puts "There is no value!"
