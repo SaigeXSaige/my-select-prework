@@ -6,9 +6,8 @@ def my_select(collection)
     while i < collection.length 
       if yield(collection[i])
       new_collection << collection[i]
-    end
+      end
       i += 1 
-      
     end
   else
     puts "There is no value!"
